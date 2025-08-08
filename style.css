@@ -1,0 +1,450 @@
+/* ========== Global Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+   list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* ========== CSS Variables ========== */
+:root {
+  --primary-blue: #5465ff;
+  --accent-blue: #5465ff;
+  --background: #f9fafb;
+  --surface: #e9e9e9;
+  --surface-lighter: #f2f2f2;
+  --text-paragraph: #4c4c4c;
+  --text-headline: #191919;
+  --border: #e5e7eb;
+  --icon: #4c4c4c;
+  --red: #ff7f7f;
+  --green: #50c878;
+  --yellow: #fede0b;
+  --white: #ffffff;
+  --drop-shadow: rgba(0, 0, 0, 0.09);
+}
+
+/* ========== Base Styles ========== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--surface);
+  color: var(--text-paragraph);
+}
+
+.blue-color{  
+  background-color: var(--accent-blue);
+}
+.green-color{  
+  background-color: var(--red);
+}
+.red-color{  
+  background-color: var(--green);
+}
+.yellow-color{  
+  background-color: var(--yellow);
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-headline);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 4.625rem;
+}
+
+h2 {
+  font-size: 2.875rem;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: 2.125rem;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+} 
+
+h6 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+p{
+  color: var(--text-paragraph);
+}
+.btn{ 
+background-color: var(--accent-blue);
+border-radius: 50px;
+border-style: none;
+color: var(--white);
+}
+
+.btn-big{
+  padding: 24px 60px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.btn-mid{
+  padding: 20px 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.label {
+   font-family: "Work Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+/* ========== Layout ========== */
+.container {
+  max-width: 1440px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* ========== Header ========== */
+header {
+  background-color: var(--white);
+  padding: 1rem 0;
+}
+ 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem; 
+}
+
+nav ul li a{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-paragraph);
+}
+.logo img{
+  width: 120px;
+  height: 100%;
+}
+.cart-icon {
+  width: 18px;
+  cursor: pointer;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  padding: 4.5rem 1.5rem 2.25rem;
+  text-align: center;
+
+}
+
+.hero p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* ========== Search ========== */
+.search-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-box { 
+  width: 100%;
+  padding: 1rem 1rem 1rem 2.5rem; /* space for icon on left */
+  border: 2px solid var(--border);
+  border-radius: 40px;
+  background-color: var(--surface-lighter);
+  font-size: 1rem;
+  color: var(--text-paragraph);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-box:focus {
+  border-color: var(--primary-blue);
+}
+
+.search-box::placeholder {
+    font-family: "Work Sans", sans-serif;
+  color: var(--text-paragraph);  
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+ .fa-magnifying-glass {
+  position: absolute; 
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: var(--icon);
+  pointer-events: none;  
+}
+
+/* ========== CategoryContainer==== */
+
+.CategoryContainer .col-4{
+  padding: 30px 20px;
+  background-color: var(--surface-lighter);
+  border: var(--border) solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.CategoryCard{
+padding: 32px 0;
+display: flex;
+flex-direction: row;
+gap: 10px;
+align-items: center;
+  
+  justify-content: center;
+}
+.CategoryCard .dot{
+  width: 10px;
+  height: 10px;  
+ 
+  border-radius: 10px;
+}
+.CategoryCard img{
+  width: 240px;
+  height: 100%;
+}
+
+/* ========== Featured-Categories === */
+.Featured-Categories{
+  display: flex;
+  flex-direction: column;
+   text-align: center;
+  gap: 42px;
+  padding: 102px 0 142px 0;
+}
+.Product-container{
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+
+}
+.product-card{
+  display: flex;
+  max-width: 280px;
+  flex-direction: column;
+  background-color: var(--surface-lighter);
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+.product-card .lablee{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product-card .lablee h6{
+  color: var(--accent-blue);
+}
+.product-card .rating{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.product-card .rating  .rating-stars{
+  color: var(--yellow);
+}
+.product-card img{
+  padding-top: 5px;
+  width: 240px;
+  min-height: 240px;
+}
+.info-contaner{
+  display: flex;
+ height: 100%;
+  flex-direction: column; 
+  text-align: left;
+  justify-content: space-between;   
+  gap: 5px;
+}
+.info-contaner h4{
+  color: var(--red);  
+}
+
+/* ========== Highlighted-product =========*/
+
+.Highlighted-product{
+  padding: 140px 240px;
+  gap: 334px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+}
+.Highlighted-product .Info h1 span{ 
+ color: var(--red);
+}
+
+.Highlighted-product .Info  p{
+  padding-bottom: 50px;
+  line-height: 32px;
+}
+
+
+/* ========== Testimonials ========== */
+
+.Testimonials{
+  padding: 170px 240px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: row;
+   justify-content: space-around;
+  
+}
+.Testimonials .col-3{
+  max-width: 424px;
+  padding: 30px 20px;
+ background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+ 
+  
+}
+
+.fa-quote-left{  
+  color: var(--accent-blue);
+  font-size: 36px;
+}
+.Testimonials .Image-container{
+  width: 70px;
+  height: 100%;
+   
+}
+
+.Testimonials p{
+  font-size: 12px;
+  font-weight: 300;
+  padding-top: 5px;
+}
+.Testimonials .rating{
+  color: var(--yellow);
+}
+
+/* ========== Footer ========== */
+
+footer{
+  padding: 70px 240px;
+  
+}
+footer .container{
+  padding:40px;
+  background-color: var(--surface-lighter);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+footer .info .Text{
+  padding-bottom: 30px;
+
+}
+footer h4{
+  color: var(--text-paragraph);
+}
+
+footer .Socila-Media i{
+   font-size: 24px;
+   padding-left: 5px;
+}
+.Newsletter{
+  display:flex;
+ align-items: center;
+ gap: 20px;
+ padding-bottom: 70px;
+}
+footer input{
+padding: 20px 340px 20px 20px;
+border: var(--white);
+border-radius: 40px;
+text-align: left;
+}
+
+footer .navbar {
+  margin-top: 40px;
+}
+footer p{
+  font-size: 0.8rem;
+}
+
+
+/* ========== Responsive ========== */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .search-container {
+    padding: 0 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+
