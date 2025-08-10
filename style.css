@@ -162,6 +162,14 @@ nav ul li a{
   width: 18px;
   cursor: pointer;
 }
+header button{
+  position: absolute;
+  border: 0px;
+  background-color: #fff;
+  color: var(--icon);
+  right: 50px;
+  font-size: 1.2rem;
+}
 
 /* ========== Hero Section ========== */
 .hero {
@@ -446,5 +454,6 @@ footer p{
     gap: 1rem;
   }
 }
+
 
 

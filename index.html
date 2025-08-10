@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morpho Ecommerce</title>
-    <link rel="stylesheet" href="style.css" />
+     
+    <!-- <link rel="stylesheet" href="styleai.css"> -->
+     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style-lightmode.css"> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -17,7 +20,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="light-mode">
     <!-- Header -->
     <header class="header">
       <div class="container row navbar">
@@ -37,6 +40,10 @@
             alt="Shopping Cart"
             class="cart-icon"
           />
+          
+           <button onclick="toggleTheme()">
+          <i class="fa-solid fa-sun"></i>
+           </button>
         </nav>
       </div>
     </header>
@@ -493,6 +500,15 @@
         </nav>
       </div>
     </footer>
+
+
+
+
+    <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
 
     <script src="index.js"></script>
   </body>
