@@ -1,0 +1,53 @@
+/* ========== Header ========== */
+header {
+  background-color: var(--white);
+  padding: 1rem 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+   
+}
+
+nav ul li a{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-paragraph);
+}
+.logo img{
+  width: 11.25rem;
+  height: 100%;
+}
+.cart-icon {
+  width: 1.125rem;
+  cursor: pointer;
+}
+/* .navbar  .icons .icon{
+  padding-right: 1.875rem;
+} */
+.navbar  .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+}
+#toggleBtn{
+  padding :0 5rem;
+  display: none;
+   font-size: 1.7rem;
+  
+ }
+
+header button{
+  border: 0;
+  background-color: #fff;
+  color: var(--icon);
+  font-size: 1.2rem;
+}
