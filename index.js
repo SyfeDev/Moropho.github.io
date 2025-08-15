@@ -57,3 +57,19 @@ document.addEventListener("click", (e) => {
 //         }
 //     });
 // });
+
+
+// dropdown Menu
+document.addEventListener("DOMContentLoaded", () => {
+    const dropdown = document.querySelector(".dropdown");
+    const dropdownBtn = document.getElementById("dropdownBtn");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    dropdownBtn.addEventListener("click", () => {
+        dropdownMenu.classList.add("show");
+    });
+
+    dropdown.addEventListener("mouseleave", () => {
+        dropdownMenu.classList.remove("show");
+    });
+});

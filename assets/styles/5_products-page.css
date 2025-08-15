@@ -1,24 +1,13 @@
-#select {
-  padding: 1rem 3rem 1rem 1rem;
-  background-color: var(--white);
-  border: 0.0625rem solid var(--border);
-  border-radius: 0.625rem;
-  background-image: url("/assets/images/arrow-doen.svg");
-  background-size: 1.5rem;
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-}
+
 #select:focus {
   border: 0.0625rem solid var(--accent-blue);
 }
-#select option {
+#select .dropdown-content {
   border: 0.0625rem solid var(--border);
   border-radius: 0.625rem;
 }
 
-select option:hover {
-  background: #f0f0f0;
-}
+
 .Featured-Categories .row {
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -35,4 +24,63 @@ select option:hover {
 .pagination a:hover {
   font-size: 1.6rem;
   font-weight: 700;
+}
+
+
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button */
+.dropdown-btn {
+  padding: 1rem 3rem 1rem 1rem;
+  background-color: var(--white);
+  border: 0.0625rem solid var(--border);
+  border-radius: 0.625rem;
+  background-image: url("/assets/images/arrow-doen.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: right 10px center;    
+    cursor: pointer;
+     
+}
+
+/* Menu content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;     
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/* Menu links */
+.dropdown-content a {    
+    padding: .625rem 1rem ;    
+    display: block;
+    text-align: left;
+}
+ 
+
+/* Show dropdown when .show is added */
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-content.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
