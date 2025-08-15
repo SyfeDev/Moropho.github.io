@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/styles/layout.css" />
     <link rel="stylesheet" href="assets/styles/header.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
-   <link rel="stylesheet" href="/assets/styles/media_quer.css">
+    <link rel="stylesheet" href="/assets/styles/media_quer.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -32,7 +32,7 @@
           <img src="assets/images/Logo.svg" alt="Morpho Logo" />
         </div>
         <nav class="col-2 nav-menu">
-          <ul>
+          <ul class="menu-itmes">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/products.html">Products</a></li>
             <li><a href="#about">About</a></li>
@@ -44,10 +44,12 @@
             alt="Shopping Cart"
             class="cart-icon"
           />
-
           <button onclick="toggleTheme()">
             <i class="fa-solid fa-sun"></i>
           </button>
+           
+<img id="toggleBtn" src="assets/images/menu.svg" alt="" srcset="">
+          
         </nav>
       </div>
     </header>
@@ -354,8 +356,16 @@
 
     <!-- highlighted product -->
 
-    <section class="Highlighted-product">
-      <div class="Product-Container">
+    <section class="Highlighted-product ">
+     <div class="row">
+       <div class="Image-Container col-2">
+        <img
+          src="assets/images/Highlighted Product Image.png"
+          alt="Highlighted Product Image"
+        />
+      </div>
+
+      <div class="Product-Container col-2">
         <div class="Info">
           <h1><span>Unleash Limitless Power</span> AMD Ryzen 9000 Series</h1>
           <p>
@@ -366,98 +376,93 @@
           <button type="button" class="btn btn-big">Buy now</button>
         </div>
       </div>
-      <div class="Image-Container">
-        <img
-          src="assets/images/Highlighted Product Image.png"
-          alt="Highlighted Product Image"
-        />
-      </div>
+     </div>
     </section>
 
     <!-- Testimonials -->
 
-    <section class="Testimonials  ">
+    <section class="Testimonials">
       <div class="row">
         <div class="col-3">
-        <i class="fa-solid fa-quote-left"></i>
-        <div class="Image-container">
-          <img
-            src="assets/images/Testimonial Image.png"
-            alt="Testimonial Image"
-          />
-        </div>
-        <div class="rating">
-          <div class="rating-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-quote-left"></i>
+          <div class="Image-container">
+            <img
+              src="assets/images/Testimonial Image.png"
+              alt="Testimonial Image"
+            />
           </div>
-          <h6 class="rating-value">4.2</h6>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h6 class="rating-value">4.2</h6>
+          </div>
+          <div class="Info_container">
+            <h5>unbox therapy</h5>
+            <p>
+              Full range of adjustable features for maximized comfort and
+              convenienc
+            </p>
+          </div>
         </div>
-        <div class="Info_container">
-          <h5>unbox therapy</h5>
-          <p>
-            Full range of adjustable features for maximized comfort and
-            convenienc
-          </p>
-        </div>
-      </div>
 
-      <div class="col-3">
-        <i class="fa-solid fa-quote-left"></i>
-        <div class="Image-container">
-          <img
-            src="assets/images/Testimonial Image-1.png"
-            alt="Testimonial Image"
-          />
-        </div>
-        <div class="rating">
-          <div class="rating-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+        <div class="col-3">
+          <i class="fa-solid fa-quote-left"></i>
+          <div class="Image-container">
+            <img
+              src="assets/images/Testimonial Image-1.png"
+              alt="Testimonial Image"
+            />
           </div>
-          <h6 class="rating-value">4.2</h6>
-        </div>
-        <div class="Info_container">
-          <h5>Hardware unboxed</h5>
-          <p>
-            Full range of adjustable features for maximized comfort and
-            convenience Full range of adjustable features for maximized comfort
-            and convenience
-          </p>
-        </div>
-      </div>
-      <div class="col-3">
-        <i class="fa-solid fa-quote-left"></i>
-        <div class="Image-container">
-          <img
-            src="assets/images/Testimonial Image-2.png"
-            alt="Testimonial Image"
-          />
-        </div>
-        <div class="rating">
-          <div class="rating-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h6 class="rating-value">4.2</h6>
           </div>
-          <h6 class="rating-value">4.2</h6>
+          <div class="Info_container">
+            <h5>Hardware unboxed</h5>
+            <p>
+              Full range of adjustable features for maximized comfort and
+              convenience Full range of adjustable features for maximized
+              comfort and convenience
+            </p>
+          </div>
         </div>
-        <div class="Info_container">
-          <h5>Tech core duo</h5>
-          <p>
-            Full range of adjustable features for maximized comfort and
-            convenience
-          </p>
+        <div class="col-3">
+          <i class="fa-solid fa-quote-left"></i>
+          <div class="Image-container">
+            <img
+              src="assets/images/Testimonial Image-2.png"
+              alt="Testimonial Image"
+            />
+          </div>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h6 class="rating-value">4.2</h6>
+          </div>
+          <div class="Info_container">
+            <h5>Tech core duo</h5>
+            <p>
+              Full range of adjustable features for maximized comfort and
+              convenience
+            </p>
+          </div>
         </div>
-      </div>
       </div>
     </section>
     <!-- Footer -->
@@ -465,23 +470,23 @@
       <div class="container">
         <div class="row">
           <div class="info">
-          <div class="Text">
-            <h3>Join our committee</h3>
-            <h4>For the latest computer parts discount</h4>
+            <div class="Text">
+              <h3>Join our committee</h3>
+              <h4>For the latest computer parts discount</h4>
+            </div>
+            <div class="Socila-Media">
+              <i class="fa-brands fa-facebook-f fa-bounce"></i>
+              <i class="fa-brands fa-discord fa-bounce"></i>
+              <i class="fa-brands fa-tiktok fa-bounce"></i>
+              <i class="fa-brands fa-youtube fa-bounce"></i>
+            </div>
           </div>
-          <div class="Socila-Media">
-            <i class="fa-brands fa-facebook-f fa-bounce"></i>
-            <i class="fa-brands fa-discord fa-bounce"></i>
-            <i class="fa-brands fa-tiktok fa-bounce"></i>
-            <i class="fa-brands fa-youtube fa-bounce"></i>
+          <div class="Newsletter">
+            <form action="" method="post">
+              <input type="text" placeholder="Enter your email" />
+            </form>
+            <button type="button" class="btn btn-mid">Join</button>
           </div>
-        </div>
-        <div class="Newsletter">
-          <form action="" method="post">
-            <input type="text" placeholder="Enter your email" />
-          </form>
-          <button type="button" class="btn btn-mid">Join</button>
-        </div>
         </div>
       </div>
       <div class="container row navbar">

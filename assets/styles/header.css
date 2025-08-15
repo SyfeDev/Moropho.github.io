@@ -26,9 +26,7 @@ nav ul li a{
   width: 1.125rem;
   cursor: pointer;
 }
-/* .navbar  .icons .icon{
-  padding-right: 1.875rem;
-} */
+
 .navbar  .icons {
   display: flex;
   align-items: center;
@@ -37,7 +35,7 @@ nav ul li a{
 #toggleBtn{
   padding :0 5rem;
   display: none;
-   font-size: 1.7rem;
+   
   
  }
 
