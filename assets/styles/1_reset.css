@@ -42,7 +42,11 @@ select {
   font: inherit;
   line-height: inherit;
   color: inherit;
+  appearance: none;        /* Modern browsers */
+    -webkit-appearance: none; /* Safari/Chrome */
+    -moz-appearance: none;    /* Firefox */
 }
+
 
 /* Collapse table */
 table {
@@ -100,7 +104,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 100%;
+ 
 }
 [type=date]:focus,
 [type=datetime]:focus,

@@ -1,0 +1,38 @@
+#select {
+  padding: 1rem 3rem 1rem 1rem;
+  background-color: var(--white);
+  border: 0.0625rem solid var(--border);
+  border-radius: 0.625rem;
+  background-image: url("/assets/images/arrow-doen.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+#select:focus {
+  border: 0.0625rem solid var(--accent-blue);
+}
+#select option {
+  border: 0.0625rem solid var(--border);
+  border-radius: 0.625rem;
+}
+
+select option:hover {
+  background: #f0f0f0;
+}
+.Featured-Categories .row {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.pagination {
+  align-self: self-start;
+}
+.pagination a {
+  padding: 0 0.5rem 0 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.pagination a:hover {
+  font-size: 1.6rem;
+  font-weight: 700;
+}

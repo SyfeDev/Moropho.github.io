@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morpho Ecommerce</title>
-     
+
     <!-- <link rel="stylesheet" href="styleai.css"> -->
-     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="style-lightmode.css"> -->
+    <link rel="stylesheet" href="assets/styles/1_reset.css" />    
+    <link rel="stylesheet" href="assets/styles/2_system_design.css" />
+    <link rel="stylesheet" href="assets/styles/3_layout.css" />
+    <link rel="stylesheet" href="assets/styles/4_header.css" />
+    <link rel="stylesheet" href="assets/styles/5_products-page.css" />
+    <link rel="stylesheet" href="assets/styles/6_style.css" />
+    <link rel="stylesheet" href="assets/styles/7_media_quer.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -22,13 +27,13 @@
   </head>
   <body class="light-mode">
     <!-- Header -->
-    <header class="header">
+  <header class="header">
       <div class="container row navbar">
         <div class="col-2 logo">
           <img src="assets/images/Logo.svg" alt="Morpho Logo" />
         </div>
         <nav class="col-2 nav-menu">
-          <ul>
+          <ul class="menu-itmes">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/products.html">Products</a></li>
             <li><a href="#about">About</a></li>
@@ -40,17 +45,28 @@
             alt="Shopping Cart"
             class="cart-icon"
           />
+          <button onclick="toggleTheme()">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+           
+<img id="toggleBtn" src="assets/images/menu.svg" alt="" srcset="">
           
-           <button onclick="toggleTheme()">
-          <i class="fa-solid fa-sun"></i>
-           </button>
         </nav>
       </div>
     </header>
  
     <!-- Featured Categories -->
     <section class="container Featured-Categories">
-      <h3>Featured Categories</h3>
+      <div class="row">
+        <h3>All Categories</h3>
+        <select name="" id="select" class="label ">
+          <option value="">Default Shorting</option>
+          <option value="">Short by Price</option>
+          <option value="">Short by Popularity</option>
+          <option value="">Short by Rating</option>
+          <option value="">Short by Sale</option>
+        </select>
+      </div>
       <div class="Product-container">
         <div class="product-card">
           <div class="lablee">
@@ -290,6 +306,10 @@
           </div>
         </div>
       </div>
+      <div class="pagination"><a href=""><span>1</span></a><a href=""><span>2</span></a><a href=""><span>3</span></a><a href=""><span>4</span></a>
+        <a href=""><span>5</span></a>
+        <a href=""><span>...</span></a>
+        <a href=""><span>End</span></a></div>
     </section>
 
 
@@ -297,26 +317,7 @@
   
     <!-- Footer -->
     <footer>
-      <div class="container">
-        <div class="info">
-          <div class="Text">
-            <h3>Join our committee</h3>
-            <h4>For the latest computer parts discount</h4>
-          </div>
-          <div class="Socila-Media">
-            <i class="fa-brands fa-facebook-f fa-bounce"></i>
-            <i class="fa-brands fa-discord fa-bounce"></i>
-            <i class="fa-brands fa-tiktok fa-bounce"></i>
-            <i class="fa-brands fa-youtube fa-bounce"></i>
-          </div>
-        </div>
-        <div class="Newsletter">
-          <form action="" method="post">
-            <input type="text" placeholder="Enter your email" />
-          </form>
-          <button type="button" class="btn btn-mid">Join</button>
-        </div>
-      </div>
+     
       <div class="container row navbar">
         <div class="col-2 logo">
           <img src="assets/images/Logo.svg" alt="Morpho Logo" />

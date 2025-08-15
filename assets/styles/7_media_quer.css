@@ -23,6 +23,7 @@
 /* <= 1200px (Large screens, laptops) */
 
 @media screen and (max-width: 75rem) {
+
   .row {
     gap: 1.25rem;
   }
@@ -92,7 +93,7 @@
     font-size: 1.5rem;
   }
   .row {
-    flex-direction: column;
+   
     text-align: center;
     align-items: center;
     align-content: center;
@@ -148,6 +149,13 @@
   header .navbar {
     flex-wrap: nowrap;
     justify-content: space-around !important;
+  }
+    .row {
+    flex-direction: column;
+   
+  }
+  header .row{
+    flex-direction:  row;
   }
 
   .hero {
