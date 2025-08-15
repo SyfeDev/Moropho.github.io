@@ -4,14 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morpho Ecommerce</title>
-
+     
     <!-- <link rel="stylesheet" href="styleai.css"> -->
-    <link rel="stylesheet" href="assets/styles/reset.css" />
-    <link rel="stylesheet" href="assets/styles/system_design.css" />
-    <link rel="stylesheet" href="assets/styles/layout.css" />
-    <link rel="stylesheet" href="assets/styles/header.css" />
-    <link rel="stylesheet" href="assets/styles/style.css" />
-   <link rel="stylesheet" href="/assets/styles/media_quer.css">
+     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style-lightmode.css"> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -44,70 +40,14 @@
             alt="Shopping Cart"
             class="cart-icon"
           />
-
-          <button onclick="toggleTheme()">
-            <i class="fa-solid fa-sun"></i>
-          </button>
+          
+           <button onclick="toggleTheme()">
+          <i class="fa-solid fa-sun"></i>
+           </button>
         </nav>
       </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <h1>Elite Meets Precision.<br />Unleash True Gaming Power</h1>
-        <p>
-          Explore cutting-edge desktops, laptops, and accessories<br />
-          built to elevate your performance—whether you're gaming, coding, or
-          creating.
-        </p>
-
-        <div class="search-container">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input
-            type="text"
-            class="search-box"
-            placeholder="Search products, brands..."
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- container CategoryContainer -->
-
-    <section class="container CategoryContainer">
-      <div class="row">
-        <div class="col-4">
-          <div class="CategoryCard">
-            <div class="dot blue-color"></div>
-            <div class="CategoryLabel"><p>29 New arrive</p></div>
-          </div>
-          <img src="assets/images/Category Image.png" alt="" />
-        </div>
-        <div class="col-4">
-          <div class="CategoryCard">
-            <div class="dot green-color"></div>
-            <div class="CategoryLabel"><p>50% off</p></div>
-          </div>
-          <img src="assets/images/Category Image-1.png" alt="" />
-        </div>
-        <div class="col-4">
-          <div class="CategoryCard">
-            <div class="dot red-color"></div>
-            <div class="CategoryLabel"><p>5 left in stock"</p></div>
-          </div>
-          <img src="assets/images/Category Image-2.png" alt="" />
-        </div>
-        <div class="col-4">
-          <div class="CategoryCard">
-            <div class="dot yellow-color"></div>
-            <div class="CategoryLabel"><p>Best Seller</p></div>
-          </div>
-          <img src="assets/images/Category Image-3.png" alt="" />
-        </div>
-      </div>
-    </section>
-
+ 
     <!-- Featured Categories -->
     <section class="container Featured-Categories">
       <h3>Featured Categories</h3>
@@ -352,119 +292,13 @@
       </div>
     </section>
 
-    <!-- highlighted product -->
 
-    <section class="Highlighted-product">
-      <div class="Product-Container">
-        <div class="Info">
-          <h1><span>Unleash Limitless Power</span> AMD Ryzen 9000 Series</h1>
-          <p>
-            Experience the future of performance with the AMD Ryzen 9000 series.
-            Engineered for speed, precision, and next-level multitasking, it's
-            time to take your computing to the edge.
-          </p>
-          <button type="button" class="btn btn-big">Buy now</button>
-        </div>
-      </div>
-      <div class="Image-Container">
-        <img
-          src="assets/images/Highlighted Product Image.png"
-          alt="Highlighted Product Image"
-        />
-      </div>
-    </section>
 
-    <!-- Testimonials -->
-
-    <section class="Testimonials  ">
-      <div class="row">
-        <div class="col-3">
-        <i class="fa-solid fa-quote-left"></i>
-        <div class="Image-container">
-          <img
-            src="assets/images/Testimonial Image.png"
-            alt="Testimonial Image"
-          />
-        </div>
-        <div class="rating">
-          <div class="rating-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h6 class="rating-value">4.2</h6>
-        </div>
-        <div class="Info_container">
-          <h5>unbox therapy</h5>
-          <p>
-            Full range of adjustable features for maximized comfort and
-            convenienc
-          </p>
-        </div>
-      </div>
-
-      <div class="col-3">
-        <i class="fa-solid fa-quote-left"></i>
-        <div class="Image-container">
-          <img
-            src="assets/images/Testimonial Image-1.png"
-            alt="Testimonial Image"
-          />
-        </div>
-        <div class="rating">
-          <div class="rating-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h6 class="rating-value">4.2</h6>
-        </div>
-        <div class="Info_container">
-          <h5>Hardware unboxed</h5>
-          <p>
-            Full range of adjustable features for maximized comfort and
-            convenience Full range of adjustable features for maximized comfort
-            and convenience
-          </p>
-        </div>
-      </div>
-      <div class="col-3">
-        <i class="fa-solid fa-quote-left"></i>
-        <div class="Image-container">
-          <img
-            src="assets/images/Testimonial Image-2.png"
-            alt="Testimonial Image"
-          />
-        </div>
-        <div class="rating">
-          <div class="rating-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h6 class="rating-value">4.2</h6>
-        </div>
-        <div class="Info_container">
-          <h5>Tech core duo</h5>
-          <p>
-            Full range of adjustable features for maximized comfort and
-            convenience
-          </p>
-        </div>
-      </div>
-      </div>
-    </section>
+  
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="info">
+        <div class="info">
           <div class="Text">
             <h3>Join our committee</h3>
             <h4>For the latest computer parts discount</h4>
@@ -482,17 +316,13 @@
           </form>
           <button type="button" class="btn btn-mid">Join</button>
         </div>
-        </div>
       </div>
       <div class="container row navbar">
         <div class="col-2 logo">
           <img src="assets/images/Logo.svg" alt="Morpho Logo" />
         </div>
         <div class="col-2">
-          <p>
-            © 2025 TechStore. All rights reserved. | Privacy Policy | Terms of
-            Use
-          </p>
+          <p >© 2025 TechStore. All rights reserved. |  Privacy Policy | Terms of Use</p>
         </div>
         <nav class="col-2 nav-menu">
           <ul>
@@ -502,7 +332,7 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="#account">Account</a></li>
           </ul>
-
+          
           <img
             src="assets/images/shopping-bag.svg"
             alt="Shopping Cart"
@@ -512,11 +342,14 @@
       </div>
     </footer>
 
+
+
+
     <script>
-      function toggleTheme() {
-        document.body.classList.toggle("light-mode");
-      }
-    </script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
 
     <script src="index.js"></script>
   </body>

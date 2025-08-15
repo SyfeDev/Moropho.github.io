@@ -178,17 +178,26 @@ align-items: center;
 
 /* ========== Testimonials ========== */
 
-.Testimonials{
+.Testimonials{    
+  
   padding: 10.625rem 0;
   background-color: var(--background);
 }
+.Testimonials .row{
+  max-width: 90rem;
+  margin: 0 auto;
+  align-items: stretch;
+ 
+}
 .Testimonials .col-3{
  max-width: 23.375rem;
+ flex-grow: 1;
   padding: 1.875rem 1.25rem;
  background-color: var(--white);
   display: flex;
   flex-direction: column;
   border-radius: 0.625rem;
+  border: .0625rem solid var(--border) ;
 
 
 }
@@ -205,6 +214,7 @@ align-items: center;
 
 .Testimonials p{
   font-size: 1.125rem;
+  line-height: 1.5rem;
   font-weight: 300;
   padding-top:0.313rem;
 }
@@ -222,7 +232,7 @@ footer .container{
   padding: 2.5rem;
   background-color: var(--surface-lighter);
   border-radius: 1.25rem;
-  display: flex;
+  
 
 }
 footer .info .Text{

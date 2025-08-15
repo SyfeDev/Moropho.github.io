@@ -427,9 +427,9 @@ footer p{
   font-size: 0.8rem;
 }
 
-
+ 
 /* ========== Responsive ========== */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   h1 {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -453,7 +453,7 @@ footer p{
     align-items: flex-start;
     gap: 1rem;
   }
-}
+} */
 
 
 

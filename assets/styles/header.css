@@ -3,14 +3,10 @@ header {
   background-color: var(--white);
   padding: 1rem 0;
 }
-
-.navbar {
+.nav-menu{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 2rem;
 }
- 
-
 nav ul {
   display: flex;
   gap: 1.5rem;
